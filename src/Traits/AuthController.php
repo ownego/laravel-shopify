@@ -109,7 +109,7 @@ trait AuthController
             [
                 'shopDomain' => $shopDomain->toNative(),
                 'target' => $cleanTarget,
-                'host' => array_get($params, 'host'),
+                'host' => \Arr::get($params, 'host'),
             ]
         );
     }
